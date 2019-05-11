@@ -1,1 +1,175 @@
-"Hello World" 
+<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 0.</p>
+<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
+
+<p style="color: red; font-weight: bold">Links to alert messages:</p>
+<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
+
+
+
+# Quick Start: Install and Configure an ownCloud Server
+
+TOC
+
+
+# Overview
+
+ownCloud is an open source file-sharing server that lets you access your private data through a web UI, Android, iPhone, or other devices. 
+
+This guide is intended for administrators who want a non-technical option to install and configure an ownCloud server using the Installation Wizard. Once completed, you will be ready to enable client connections and add users. 
+
+**_Not an administrator?_**
+
+If you are a user and you want to connect to an ownCloud server using the desktop or mobile client, refer to **Quick Start: Connect to ownCloud Server from a Desktop (link)**. 
+
+
+# Before You Begin
+
+Before installing ownCloud:
+
+
+
+*   Familiarize yourself with [installation options](https://doc.owncloud.org/server/10.1/admin_manual/installation/index.html) to know which best suits your needs. 
+
+    **_Note: This guide covers installation using the wizard only._**
+
+*   Review the ownCloud [prerequisites](https://doc.owncloud.org/server/10.1/admin_manual/installation/manual_installation.html#prerequisites).
+*   Review the [system requirements](https://doc.owncloud.org/server/10.1/admin_manual/installation/system_requirements.html).
+*   Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
+
+
+# Download and Launch ownCloud Appliance
+
+Appliance enables non-technical users to deploy ownCloud quickly and easily using VirtualBox. It is set up and configured with a secure connection and the ownCloud Proxy app. Appliance supports up to 500 users. 
+
+
+
+1. Go to the [ownCloud Download Page](https://owncloud.org/download/).
+2. From the Appliance section, download the VirtualBox OVA image file.
+3. Run VirtualBox.
+4. Select **File > Import Appliance** to run the Import wizard.
+5. Load the OVA image file and agree to the terms and conditions.
+6. Configure your domain and network settings.
+
+
+# Run the Appliance
+
+To deploy your ownCloud server, you will need to activate Appliance when you run it for the first time by providing a valid email address. Follow the Appliance activation wizard prompts on-screen:
+
+
+
+1. Open your web browser.
+2. Enter [https://192.168.1.35](https://192.168.1.35) in the address bar.
+3. Enter a valid email address to activate.
+4. Download the license sent to your email.
+5. Click **Upload License File** on the activation screen and select the file **ucs.license**.
+6. Click **Finish**.
+
+
+# Run the Installation Wizard
+
+You should now see the Univention Portal. From here, you can run the ownCloud Installation wizard to create your server.
+
+
+
+1. From the Univention Portal, under Applications, click **ownCloud** to open the login screen.
+2. Enter “Administrator” for username and the password you used when setting up the Appliance.
+3. Click Enter.
+
+    The dialog box “A safe home for all your data” is displayed. Your ownCloud server is now ready to use!
+
+
+
+# What’s Next?
+
+Now that you have a working ownCloud server, you can:
+
+
+
+*   Configure your server
+*   Enable users to connect to the Owncloud server using the server's IP address and port 8080
+*   Add a user account
+
+
+# Configure Your Server
+
+You can manage your ownCloud server settings from your browser, including such as adding a profile picture and changing your notification settings. Select **Administrator > Settings** in the upper-right corner.
+
+
+# Enable User Connection from Proxy Server
+
+To enable a user to connect to your server using the server IP address and proxy port:
+
+
+
+1. Go to **Administrator > Settings**.
+2. Click **User Authentication**.
+3. In the Server tab, change the Port field to “8080”.
+4. Click **Continue** three times until the wizard is complete.
+
+    Users can now connect to your ownCloud proxy server.
+
+
+
+# Add a New User Account
+
+Manage local system settings, such as favorites, users, devices, and software, in the Univention Portal. 
+
+To add a new user account as an administrator:
+
+
+
+1. Click the UCS “System and domain settings” icon in the Univention Portal.
+2. Select Users and click Users again.
+3. Click **Add **from the top row.
+4. Enter the user account details in the wizard and click **Create User**.
+
+
+# 
+
+
+# Quick Connect to ownCloud from a Desktop
+
+
+# Overview
+
+ownCloud is an open source file-sharing server that lets you access your private data through a web UI, Android, iPhone, or other devices. 
+
+This guide is intended for users who want to connect to an ownCloud server from their desktop. For instructions on how to access ownCloud from a mobile device, refer to **Quick Connect to ownCloud from a Mobile Device. (link)**
+
+
+# Before You Begin
+
+Before installing ownCloud:
+
+
+
+*   Be sure you have an ownCloud account.
+*   Review the [system requirements](https://doc.owncloud.org/server/10.1/admin_manual/installation/system_requirements.html).
+
+
+# Download and Install ownCloud Desktop Client
+
+The ownCloud desktop client keeps your data synced. Select one or more directories on your local machine for access to all your files from any location.
+
+To install the ownCloud Desktop Client:
+
+
+
+1. From your browser, go to [https://owncloud.org/download/#owncloud-desktop-client-windows](https://owncloud.org/download/#owncloud-desktop-client-windows).
+2. Choose your system format and click the **Download **button. Your download file is saved to your local machine.
+3. Open the file you just downloaded to begin installation.
+4. Enable “Launch ownCloud after finish” and click **Finish**.
+
+**Connect to ownCloud Server**
+
+
+
+1. Enter the server address you want to connect to and click **Next**.
+
+    **Note: **If you do not know the server address, check with your administrator.
+
+2. Select “Trust this certification anyway” and click **OK**.
+3. Enter your username and password and click **Next**.
+4. Configure your local folder options and then click **Connect**.
+
+	You are now ready to begin syncing files with the ownCloud server.

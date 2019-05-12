@@ -17,7 +17,7 @@ This section is intended for administrators who want a non-technical option to i
 
 Not an administrator?
 
-If you are a user and want to connect to an ownCloud server, refer to the section [Connect to ownCloud Using Desktop Client](#users c).
+If you are a user and want to connect to an ownCloud server, refer to the section [Connect to ownCloud Using Desktop Client](#user).
 
 ### Before You Begin
 

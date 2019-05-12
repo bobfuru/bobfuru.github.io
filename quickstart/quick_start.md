@@ -1,4 +1,4 @@
-# Quick Start: ownCloud Server
+# Quick Start: Install, Configure, and Connect ownCloud Server
 
 ## Introduction
 
